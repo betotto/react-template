@@ -1,0 +1,53 @@
+{
+  "name": "react-template",
+  "version": "0.0.1",
+  "description": "Template for react and redux and ducks folder structure",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest test",
+    "coverage": "jest test --coverage",
+    "dev-server": "webpack-dev-server --mode development",
+    "compile": "eslint src  && jest test && webpack --mode production",
+    "eslint": "eslint src ; exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/betotto/react-template.git"
+  },
+  "keywords": [
+    "react",
+    "template"
+  ],
+  "author": "betotto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/betotto/react-template/issues"
+  },
+  "homepage": "https://github.com/betotto/react-template#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.1.1",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^1.0.0",
+    "eslint": "^5.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-react": "^7.11.1",
+    "jest": "^23.5.0",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "mini-css-extract-plugin": "^0.4.1",
+    "postcss-loader": "^3.0.0",
+    "ramda": "^0.25.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-mock-store": "^1.5.3",
+    "redux-thunk": "^2.3.0",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  }
+}

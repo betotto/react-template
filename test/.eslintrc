@@ -1,0 +1,19 @@
+{
+  "globals": {
+		"window": true,
+		"jest": true,
+		"module": true,
+		"process": true,
+		"PAYPAL": true,
+		"setSize": true,
+		"localeBundle": true,
+    "expect": true,
+    "beforeAll": true,
+    "afterAll": true
+	},
+  "rules": {
+			"no-underscore-dangle": "off",
+			"no-console": "off",
+			"no-unused-vars": "off"
+  }
+}

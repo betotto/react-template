@@ -1,0 +1,15 @@
+/node_modules
+
+/dist/*.js
+/dist/*.js.map
+/dist/**/*.js
+/dist/**/*.js.map
+
+/dist/*.css
+/dist/*.css.map
+/dist/**/*.css
+/dist/**/*.css.map
+/.cache
+
+/.vscode
+/coverage

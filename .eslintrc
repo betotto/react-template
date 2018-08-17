@@ -1,0 +1,82 @@
+{
+	"extends": [
+		"eslint:recommended",
+		"plugin:import/errors",
+		"plugin:import/warnings"
+	],
+	"plugins": [
+		"react"
+	],
+	"globals": {
+		"window": true,
+		"module": true,
+		"process": true,
+		"PAYPAL": true,
+		"setSize": true,
+		"localeBundle": true
+	},
+	"parserOptions": {
+		"ecmaVersion": 6,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"env": {
+		"es6": true,
+		"node": true,
+		"browser": true,
+		"mocha": true
+	},
+	"rules": {
+		"indent": ["error", 2, { "SwitchCase": 1 }],
+		"linebreak-style": ["error", "unix"],
+		"quotes": ["error", "single"],
+		"semi": ["error", "always"],
+		"eqeqeq": ["error", "always"],
+		"no-console": "warn",
+		"eol-last": "error",
+		"no-debugger": "error",
+		"block-scoped-var": "error",
+		"no-div-regex": "error",
+		"no-eval": "error",
+		"array-bracket-spacing": "error",
+		"brace-style": "error",
+		"comma-spacing": ["error", {"before": false, "after": true}],
+		"block-spacing": "error",
+		"space-before-blocks": ["error", {"functions": "always", "keywords": "always"}],
+		"max-len": ["error", {"code": 140, "ignoreUrls": true}],
+		"key-spacing": ["error", {"beforeColon": false, "afterColon": true}],
+		"no-var": "error",
+		"no-unused-vars": "error",
+		"no-underscore-dangle": ["error", { "allow": ["__REDUX_DEVTOOLS_EXTENSION__", "__REDUX_DEVTOOLS_EXTENSION_COMPOSE__"] }],
+		"no-trailing-spaces": "error",
+		"no-alert": "error",
+		"no-lone-blocks": "error",
+		"jsx-quotes": "error",
+		"no-multiple-empty-lines": ["error", {"max": 1, "maxEOF": 0}],
+		"react/display-name": [ "error", {"ignoreTranspilerName": false }],
+		"react/forbid-prop-types": ["error", {"forbid": ["any"]}],
+		"react/jsx-boolean-value": "error",
+		"react/jsx-curly-spacing": "error",
+		"react/jsx-indent-props": ["error", 2],
+		"react/jsx-key": "error",
+		"react/jsx-no-duplicate-props": "error",
+		"react/jsx-no-literals": "error",
+		"react/jsx-no-undef": "error",
+		"react/jsx-pascal-case": "error",
+		"react/jsx-uses-react": "error",
+		"react/jsx-uses-vars": "error",
+		"react/no-danger": "error",
+		"react/no-did-mount-set-state": "error",
+		"react/no-did-update-set-state": "error",
+		"react/no-direct-mutation-state": "error",
+		"react/no-multi-comp": "error",
+		"react/no-unknown-property": "error",
+		"react/prefer-es6-class": "error",
+		"react/prop-types": "error",
+		"react/react-in-jsx-scope": "error",
+		"react/self-closing-comp": "error",
+		"react/sort-comp": "error"
+	}
+}
