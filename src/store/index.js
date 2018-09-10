@@ -1,7 +1,7 @@
 import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
 import thunk from 'redux-thunk';
-import appModule from '../components/appModule';
-import todoModule from '../components/todoModule/todoModule';
+import appModule from '../appModule';
+import todoModule from '../todo/todoModule';
 import initialState from './initialState';
 
 const appReducer = combineReducers({

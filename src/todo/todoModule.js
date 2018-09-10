@@ -2,7 +2,7 @@ import R_merge from 'ramda/src/merge';
 import R_append from 'ramda/src/append';
 import R_update from 'ramda/src/update';
 import R_remove from 'ramda/src/remove';
-import initialState from '../../store/initialState';
+import initialState from '../store/initialState';
 
 const ADD_TODO = 'ADD_TODO';
 const COMPLETE_TODO = 'COMPLETE_TODO';

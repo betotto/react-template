@@ -12,12 +12,7 @@ Esta plantilla esta pensada para usarse asi:
 
 ### Folders
 
-
-- components:    En este folder se deberan agregar todos los modulos con los que cuenta la aplicacion, en este ejemplo solo tenemos el todoModule, cada folder module a su vez debe tener al menos los siguientes archivos:
-
-  - Container:   Es el componente principal del modulo, controla todos los subcomponentes que integran la aplicacion en el ejemplo solo exite TodoItem, el container es el unico que debera conectarse con Redux los demas componentes del folder seran dependendientes del Container, todos los componentes del modulo que no sean Container pueden o no tener estado, pero no se deben conectar a Redux, se sugiere en medida de lo posible que todos los componentes que dependan del Container sean stateless components.
-
-  - Module:    Este archivo debera contener todas los tipos de acciones del modulo, los tipos no deben exportarse fuera del modulo, el reducer del modulo debe ser exportado por default y todas las acciones del modulo deberan exportarse y deben ser funciones puras, si se require lanzar una accion de otro modulo, hay que importar la funcion de la accion. No lanzar directamente el tipo, por ello se integra thunk-middleware ademas para llamadas asynchronas, esto se ve en el sig. ejemplo:
+- todo:    En este folder se encuentran todos los archivos relacionados con el modulo todo, que no sean compononentes genericos. Cada modulo del app debe tener su propio folder.
 
   ```javascript
   const newAction = actionArgument => dispatch => {
@@ -36,6 +31,10 @@ Esta plantilla esta pensada para usarse asi:
 - coverage:  Contiene los archivos generados al ejecutar la cobertua de pruebas.
 
 ### Archivos
+
+- Container:   Es el componente principal del modulo, controla todos los subcomponentes que integran la aplicacion en el ejemplo solo exite TodoItem, el container es el unico que debera conectarse con Redux los demas componentes del folder seran dependendientes del Container, todos los componentes del modulo que no sean Container pueden o no tener estado, pero no se deben conectar a Redux, se sugiere en medida de lo posible que todos los componentes que dependan del Container sean stateless components. Solo debe haber un Container por modulo.
+
+- Module:    Este archivo debera contener todas los tipos de acciones del modulo, los tipos no deben exportarse fuera del modulo, el reducer del modulo debe ser exportado por default y todas las acciones del modulo deberan exportarse y deben ser funciones puras, si se require lanzar una accion de otro modulo, hay que importar la funcion de la accion. No lanzar directamente el tipo, por ello se integra thunk-middleware ademas para llamadas asynchronas, esto se ve en el sig. ejemplo:
 
 - AppContainer.js:   Es el contendor principal de la aplicacion, controla que modulos deben presentarse dependiendo el estado de la app, similar a la configuracion de rutas si usas react-router, pero totalmente basada en estado.
 

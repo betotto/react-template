@@ -4,7 +4,7 @@ import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import store from './store';
 
-import AppContainer from './components/AppContainer';
+import AppContainer from './AppContainer';
 
 render(<Provider store={store}>
   <AppContainer />

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import TodoContainer from './todoModule/TodoContainer';
+import TodoContainer from './todo/TodoContainer';
 
 class AppContainer extends Component {
   constructor(props) {

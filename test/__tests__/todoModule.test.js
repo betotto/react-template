@@ -1,7 +1,7 @@
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
-import initialState from '../../../src/store/initialState';
-import todoModule, { addTodoAction, completeTodoAction, removeTodoAction } from '../../../src/components/todoModule/todoModule';
+import initialState from '../../src/store/initialState';
+import todoModule, { addTodoAction, completeTodoAction, removeTodoAction } from '../../src/todo/todoModule';
 
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
